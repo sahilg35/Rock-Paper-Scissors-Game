@@ -33,19 +33,18 @@ if me > 2 or me < 0:
   print("You choose a invalid number")
 else:
   print(list[me])
-number = random.randint(0,2)
-computer = list[number]
-print(f"Computer choose {computer}")
+  number = random.randint(0,2)
+  computer = list[number]
+  print(f"Computer choose {computer}")
 
-if me > 2 or me < 0:
-  print("You choose a invalid number")
-elif me == 2 and number == 0:
-  print("You loss")
-elif me == 0 and number == 2:
-  print("You Win")
-elif me > number:
-  print("You Win")
-elif number > me:
-  print("You loss")
-elif me == number:
-  print("It's a draw")
+
+  if me == 2 and number == 0:
+    print("You loss")
+  elif me == 0 and number == 2:
+    print("You Win")
+  elif me > number:
+    print("You Win")
+  elif number > me:
+    print("You loss")
+  elif me == number:
+    print("It's a draw")
